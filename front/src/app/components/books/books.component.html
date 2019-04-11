@@ -1,0 +1,107 @@
+<div class="nav-wrapper blue pad">
+  <div class="container">
+    <div class="row no-gutters">
+      <div class="col-12 col-sm-6 col-md-8">
+        <img src='../../../assets/logo_white.svg' height="90" width="230">
+      </div>
+      <div class="col-6 col-md-4"><p class="title">Bitso Change Dashboard</p></div>
+    </div>
+  </div>
+  <div class="container white">
+    <div class="row no-gutters">
+        <div class="col-md-2 Find">Update each</div>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-md-12">
+        <form #booksForm="ngForm" (ngSubmit)="getBook(booksForm)">
+          <input type="text" name="book" #name="ngModel" [(ngModel)]="servicesservice.selectedBooks.book" placeholder="Ingress Time (1 hour,6 hour, 12 hour, 24 hours)">
+        </form> 
+      </div>
+    </div> 
+  </div>
+    <div class="row"></div>
+</div>
+<br />
+
+<div class="container">
+  <div class="row">
+      <div class="col-sm-6 first-column">
+        <div class="card">
+          <div class="card-content">
+            <div class="row" ng-repeat="book in pesos">
+              <div class="col-sm-12 head-pesos text-center">
+                <h4><b><!-- books:book --></b></h4>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <P class="text-pesos">Min price:</P>
+                  <!-- {{books:minimum_price}}; -->
+                </div>
+                <div class="col-sm-4">
+                  <P class="text-pesos">Min amount:</P>
+                  <!-- {{books:minimum_amount}}; -->
+                </div>
+                <div class="col-sm-4">
+                  <P class="text-pesos">Min value:</P>
+                  <!-- {{books:minimun_value}}; -->
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <P class="text-pesos">Max price:</P>
+                  <!-- {{books:maximum_price}}; -->
+                </div>
+                <div class="col-sm-4">
+                  <P class="text-pesos">Max amount:</P>
+                  <!-- {{books:maximum_price}}; -->
+                </div>
+                <div class="col-sm-4">
+                  <P class="text-pesos">Max value:</P>
+                  <!-- {{books:maximun_value}}; -->
+                </div>
+              </div>
+           </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 first-column">
+        <div class="card">
+          <div class="card-content">
+            <div class="row" ng-repeat="book in pesos">
+              <div class="col-sm-12 head-pesos text-center">
+                <h4><b><!-- books:book --></b></h4>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <P class="text-pesos">Min price:</P>
+                  <!-- {{books:minimum_price}}; -->
+                </div>
+                <div class="col-sm-4">
+                  <P class="text-pesos">Min amount:</P>
+                  <!-- {{books:minimum_amount}}; -->
+                </div>
+                <div class="col-sm-4">
+                  <P class="text-pesos">Min value:</P>
+                  <!-- {{books:minimun_value}}; -->
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <P class="text-pesos">Max price:</P>
+                  <!-- {{books:maximum_price}}; -->
+                </div>
+                <div class="col-sm-4">
+                  <P class="text-pesos">Max amount:</P>
+                  <!-- {{books:maximum_price}}; -->
+                </div>
+                <div class="col-sm-4">
+                  <P class="text-pesos">Max value:</P>
+                  <!-- {{books:maximun_value}}; -->
+                </div>
+              </div>
+           </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
