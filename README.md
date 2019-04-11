@@ -2,7 +2,7 @@
 En este repositorio se encuentra el código de la prueba Full-Stack (No terminado)
 
 ## Nota
-*La prueba Full-Stack no fue terminada pero lo quize subir de todas formas.
+*La prueba Full-Stack no fue terminada pero quise subir de todas formas.
 
 ## Prerequisitos
 * Node.Js
